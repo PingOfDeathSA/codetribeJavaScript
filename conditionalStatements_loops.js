@@ -115,17 +115,6 @@ while (k < 50) {
 
 // Exercise 5: Do While loops
 
-/*
-Exercise 5: Do While loops
-1. Print numbers from 1 to 10.
-2. Calculate the sum of all numbers from 1 to 100 and print the result.
-3. Prompt the user to enter a number greater than 10. Keep asking until
-they enter a valid number.
-4. Create a simple guessing game where the user must guess a number
-between 1 and 10. The game continues until the user guesses the correct
-number.
-*/ 
-
 // 1. Print numbers from 1 to 10.
 
 let all_numbers2 = 1;
@@ -148,29 +137,29 @@ console.log(do_while_sum);
 
 let user_number;
 
-// do {
-//     user_number = parseInt(prompt('Enter a number greater than 10: '));
-//     if (user_number > 10) {
-//         alert('You entered: ' + user_number);
-//     } else {
-//         alert('Please enter a number greater than 10.');
-//     }
-// } while (user_number <= 10);
+do {
+    user_number = parseInt(prompt('Enter a number greater than 10: '));
+    if (user_number > 10) {
+        alert('You entered: ' + user_number);
+    } else {
+        alert('Please enter a number greater than 10.');
+    }
+} while (user_number <= 10);
 
 // 4. Create a simple guessing game where the user must guess a number between 1 and 10. The game continues until the user guesses the correct number.
 
-// let correct_number = Math.floor(Math.random() * 10) + 1;
-// let user_input;
+let correct_number = Math.floor(Math.random() * 10) + 1;
+let user_input;
 
-// do {
-//     user_input = parseInt(prompt('Guess a number between 1 and 10: '));
+do {
+    user_input = parseInt(prompt('Guess a number between 1 and 10: '));
 
-//     if (user_input === correct_number) {
-//         alert('You have won the game!');
-//     } else if (user_input >= 1 && user_input <= 10) {
-//         alert('Try again! Your guess was incorrect. The correct number was: '+correct_number);
-//     } else {
-//         alert('Please enter a number between 1 and 10.');
-//     }
-// } while (user_input !== correct_number);
+    if (user_input === correct_number) {
+        alert('You have won the game!');
+    } else if (user_input >= 1 && user_input <= 10) {
+        alert('Try again! Your guess was incorrect. The correct number was: '+correct_number);
+    } else {
+        alert('Please enter a number between 1 and 10.');
+    }
+} while (user_input !== correct_number);
 

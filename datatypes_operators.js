@@ -2,6 +2,10 @@
 
 x =12;
 y= 12;
+console.log(x>y);
+console.log(x<=y);
+console.log(x ===y);
+console.log(x !==y);
 
 x>y? console.log("x is greater than y"): x<=y? console.log("x is less than or equal to y"): x ===y? console.log("x is equal to y"): console.log("x is not equal to y");
 //  Exercise 2: Boolean and Operators
